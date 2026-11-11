@@ -1,6 +1,6 @@
 # Data & Interface
 
-I build dashboards and reporting tools for government teams and senior leaders. This is my portfolio, and the first project in a fresh start for my GitHub.
+I build dashboards and reporting tools for government teams and senior leaders. This is my portfolio, part of a fresh start for my GitHub.
 
 The site brings together my background in data visualization, workflow automation, and operational applications. I am also developing my UX practice through the Google UX Design course and learning Figma.
 
@@ -69,3 +69,7 @@ GitHub Pages serves the files from the root of the `main` branch. Relative links
 The next step is to add real design artifacts as I complete them: a Figma flow, wireframes, a prototype, and notes from testing. I want the repository to show how the work develops, not just the finished screen.
 
 This portfolio has not had a formal Section 508 conformance review. The accessibility notes explain the checks and what remains.
+
+## Featured independent project
+
+[Operations Overview](https://github.com/dnstroupe/operations-overview) is my first featured dashboard project. It includes editable Figma layouts, a working demo with fictional data, and a case study. The portfolio links to it separately from my professional experience summaries.
