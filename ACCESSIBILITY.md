@@ -31,3 +31,7 @@ A passing script is only a starting point. It cannot tell us whether the reading
 The accessibility work described in the operational dashboard case study is separate from testing this website. That work covered keyboard navigation, focus order, contrast, hover feedback, and tooltips. It did not include a formal accessibility review or confirmed screen reader testing.
 
 If something on the site gets in your way, [contact me on LinkedIn](https://www.linkedin.com/in/david-stroupe/) with the page and what happened.
+
+## Current target
+
+The target is WCAG 2.2 AA. This does not establish conformance with WCAG or Section 508. A 320 CSS pixel home page check passed without horizontal page overflow after the November 11 changes. Navigation links now have a minimum height of 44 pixels as a design choice. Screen reader, text spacing, actual zoom, broader keyboard, and additional browser checks remain.

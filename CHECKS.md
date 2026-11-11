@@ -25,3 +25,9 @@ The site uses local HTML and CSS, system fonts, and ordinary links. It does not 
 ## Still open
 
 Full keyboard testing, screen reader testing, zoom checks, multiple browser testing, and real device checks remain. No formal Section 508 conformance claim is made. The next steps are in ACCESSIBILITY.md and ROADMAP.md.
+
+## November 11 review update
+
+The Work link now reaches the working independent project. A redundant illustration was removed and professional summaries are labeled separately. Role and core tools appear near the top; each professional page now identifies its specific contribution. The seven page link, structure, and selected contrast checks passed again. A 320 CSS pixel viewport check showed no horizontal page overflow on the home page. This is not actual device, zoom, or screen reader testing.
+
+The broader review and remaining work are documented in the [dashboard readiness review](https://github.com/dnstroupe/operations-overview/blob/main/AUDIT.md).
