@@ -21,7 +21,7 @@ These are summaries of professional experience. The code in this repository is f
 
 ## My role and how this site was made
 
-I provided the work history, explained my role and decisions, and chose the visual direction. I used an AI assistant to help organize the writing and build the website. The site is not being presented as a Figma deliverable or as code I wrote entirely by hand.
+I provided the work history, explained my role and decisions, and chose the visual direction. The site brings those pieces together so someone can explore my work and understand how I approach a problem.
 
 The visual direction uses charcoal, a small amount of teal, straightforward typography, and plenty of space. The work should be the focus. There are no stock photos, animated skill bars, or invented testimonials.
 
