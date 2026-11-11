@@ -35,3 +35,5 @@ If something on the site gets in your way, [contact me on LinkedIn](https://www.
 ## Current target
 
 The target is WCAG 2.2 AA. This does not establish conformance with WCAG or Section 508. A 320 CSS pixel home page check passed without horizontal page overflow after the November 11 changes. Navigation links now have a minimum height of 44 pixels as a design choice. Screen reader, text spacing, actual zoom, broader keyboard, and additional browser checks remain.
+
+The skip link destination now explicitly accepts focus. Added forced color focus and control borders, text wrapping safeguards, and scroll margins. These are implementation improvements, not a conformance claim. Future government focused projects follow the [accessibility baseline](https://github.com/dnstroupe/operations-overview/blob/main/ACCESSIBILITY-STANDARD.md).
