@@ -73,3 +73,7 @@ This portfolio has not had a formal Section 508 conformance review. The accessib
 ## Featured independent project
 
 [Operations Overview](https://github.com/dnstroupe/operations-overview) is my first featured dashboard project. It includes editable Figma layouts, a working demo with fictional data, and a case study. The portfolio links to it separately from my professional experience summaries.
+
+## Doughjo
+
+[Doughjo](https://dnstroupe.github.io/doughjo/) explores consumer ordering, an expressive brand, a configurable donut box, optional drinks, and reversible choices. [Read the design story](https://dnstroupe.github.io/doughjo/case-study.html) or [view the source](https://github.com/dnstroupe/doughjo). It is a fictional portfolio concept, with no real transactions.
