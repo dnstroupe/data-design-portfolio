@@ -77,3 +77,7 @@ This portfolio has not had a formal Section 508 conformance review. The accessib
 ## Doughjo
 
 [Doughjo](https://dnstroupe.github.io/doughjo/) explores consumer ordering, an expressive brand, a configurable donut box, optional drinks, and reversible choices. [Read the design story](https://dnstroupe.github.io/doughjo/case-study.html) or [view the source](https://github.com/dnstroupe/doughjo). It is a fictional portfolio concept, with no real transactions.
+
+## Fablebrink
+
+[Fablebrink](https://dnstroupe.github.io/fablebrink/dist/) explores streaming discovery through sixteen fictional titles, search and combined filters, saved titles, and two original animated previews with sound. [Read the design story](https://dnstroupe.github.io/fablebrink/dist/case-study.html), [open the editable Figma designs](https://www.figma.com/design/m1JMrEeFiQKkrbcpRGlVE6?node-id=11-69), or [view the source](https://github.com/dnstroupe/fablebrink). Browser comparison, screen reader testing, and participant feedback remain outstanding. Section 508 compliance has not been established.
