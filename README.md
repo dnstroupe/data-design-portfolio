@@ -81,3 +81,9 @@ This portfolio has not had a formal Section 508 conformance review. The accessib
 ## Fablebrink
 
 [Fablebrink](https://dnstroupe.github.io/fablebrink/dist/) explores streaming discovery through sixteen fictional titles, search and combined filters, saved titles, and two original animated previews with sound. [Read the design story](https://dnstroupe.github.io/fablebrink/dist/case-study.html), [open the editable Figma designs](https://www.figma.com/design/m1JMrEeFiQKkrbcpRGlVE6?node-id=11-69), or [view the source](https://github.com/dnstroupe/fablebrink). Browser comparison, screen reader testing, and participant feedback remain outstanding. Section 508 compliance has not been established.
+
+## Stillroom | Original music experience
+
+[Live app](https://dnstroupe.github.io/stillroom/) | [Case study](https://dnstroupe.github.io/stillroom/case-study.html) | [Figma](https://www.figma.com/design/w4ichthh1SMuQNj2Mk40c5?node-id=5-11) | [Repository](https://github.com/dnstroupe/stillroom)
+
+Three original Suno-generated instrumentals, real playback, protected queues, saved sessions, responsive layouts, and documented validation.
