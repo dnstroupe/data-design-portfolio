@@ -18,7 +18,16 @@
 <p>I reproduced the issue in Plotly.py 7.2.0. Setting <code>connectgaps=False</code> broke the line at the missing value, but the area underneath still filled the gap. Splitting the observations into two traces kept the gap visible. Grouping both traces under one legend entry let readers toggle the whole series together.</p>
 <p class="meta">Diagrams redrawn from the verified Chrome rendering. Both use the same observations and scale.</p>
 <p><a href="https://github.com/plotly/plotly.py/issues/5632#issuecomment-7203964303">See the reproduction and Python workaround on GitHub ↗</a></p>
+<h3 id="baltimore-map">Mapping Baltimore at Two Zoom Levels</h3>
+<p>I built a GeoViews map that draws tile boundaries as you pan and zoom. Both views below are centered on Baltimore. Zooming from 180 km to 45 km shows tiles one quarter as wide. The example calculates only the grid lines that cross the visible area.</p>
+<div class="work-grid">
+<figure style="margin:0"><img src="images/baltimore-180km.png" alt="Tile boundaries around the Baltimore marker across a 180 km view." width="640" height="480" loading="lazy" style="display:block;width:100%;height:auto"><figcaption>Regional view · 180 km across</figcaption></figure>
+<figure style="margin:0"><img src="images/baltimore-45km.png" alt="Finer tile boundaries around the same Baltimore marker across a 45 km view." width="640" height="480" loading="lazy" style="display:block;width:100%;height:auto"><figcaption>Closer view · 45 km across</figcaption></figure>
+</div>
+<p class="meta">These figures isolate the grid geometry. The interactive notebook overlays it on an OpenStreetMap basemap.</p>
+<p><a href="https://github.com/holoviz/geoviews/pull/924">View the submitted GeoViews example ↗</a></p>
 <h3 id="dask-verification">Dask · Testing a data type fix</h3>
 <p>I compared a proposed fix with its starting revision across 12 runs. In four string cases, Dask initially reported a different data type from the one it returned. With the change, all four matched the pandas reference. Categorical inputs stayed consistent on both revisions.</p>
 <p><a href="https://github.com/dask/dask/pull/12633#issuecomment-7203888467">Read the test conditions and results on GitHub ↗</a></p>
+<p>I also built a notebook that turned 200,000 points into a density chart and verified all 153,600 pixel counts against an independent NumPy calculation. <a href="https://github.com/dask/dask-examples/pull/251">View the Datashader notebook submission ↗</a></p>
 </section>
