@@ -1,0 +1,24 @@
+<section class="section" id="open-source" aria-labelledby="open-source-title">
+<p class="eyebrow">Open-source contributions</p>
+<h2 id="open-source-title">Showing missing data honestly in Plotly</h2>
+<p class="lead">What should a chart show when a reading is missing? In this example, four dots represent four observations. At sample 2, there was no reading.</p>
+<div class="work-grid"><figure style="margin:0"><figcaption><strong>Before · One trace</strong></figcaption>
+<svg viewBox="0 0 320 180" width="100%" role="img" aria-label="The fill spans the missing observation at sample 2." xmlns="http://www.w3.org/2000/svg">
+<rect width="320" height="180" rx="6" fill="#eef4f1"/>
+<path d="M40 128V54H290V128Z" fill="#9dc9ba"/>
+<path d="M40 54H102.5 M227.5 54H290" fill="none" stroke="#225f50" stroke-width="3"/>
+<g fill="#225f50"><circle cx="40" cy="54" r="4"/><circle cx="102.5" cy="54" r="4"/><circle cx="227.5" cy="54" r="4"/><circle cx="290" cy="54" r="4"/></g><path d="M40 128H290" stroke="#405852"/>
+<g font-family="Arial,sans-serif" fill="#263d36" font-size="14" text-anchor="middle"><text x="40.0" y="150">0</text><text x="102.5" y="150">1</text><text x="165.0" y="150">2</text><text x="227.5" y="150">3</text><text x="290.0" y="150">4</text><text x="165" y="171">Sample</text><text x="19" y="59">2</text><text x="19" y="132">0</text></g></svg></figure><figure style="margin:0"><figcaption><strong>After · Separate traces</strong></figcaption>
+<svg viewBox="0 0 320 180" width="100%" role="img" aria-label="The fill stops between the two observed runs." xmlns="http://www.w3.org/2000/svg">
+<rect width="320" height="180" rx="6" fill="#eef4f1"/>
+<path d="M40 128V54H102.5V128Z M227.5 128V54H290V128Z" fill="#9dc9ba"/>
+<path d="M40 54H102.5 M227.5 54H290" fill="none" stroke="#225f50" stroke-width="3"/>
+<g fill="#225f50"><circle cx="40" cy="54" r="4"/><circle cx="102.5" cy="54" r="4"/><circle cx="227.5" cy="54" r="4"/><circle cx="290" cy="54" r="4"/></g><path d="M40 128H290" stroke="#405852"/>
+<g font-family="Arial,sans-serif" fill="#263d36" font-size="14" text-anchor="middle"><text x="40.0" y="150">0</text><text x="102.5" y="150">1</text><text x="165.0" y="150">2</text><text x="227.5" y="150">3</text><text x="290.0" y="150">4</text><text x="165" y="171">Sample</text><text x="19" y="59">2</text><text x="19" y="132">0</text></g></svg></figure></div>
+<p>I reproduced the issue in Plotly.py 7.2.0. Setting <code>connectgaps=False</code> broke the line at the missing value, but the area underneath still filled the gap. Splitting the observations into two traces kept the gap visible. Grouping both traces under one legend entry let readers toggle the whole series together.</p>
+<p class="meta">Diagrams redrawn from the verified Chrome rendering. Both use the same observations and scale.</p>
+<p><a href="https://github.com/plotly/plotly.py/issues/5632#issuecomment-7203964303">See the reproduction and Python workaround on GitHub ↗</a></p>
+<h3 id="dask-verification">Dask · Testing a data type fix</h3>
+<p>I compared a proposed fix with its starting revision across 12 runs. In four string cases, Dask initially reported a different data type from the one it returned. With the change, all four matched the pandas reference. Categorical inputs stayed consistent on both revisions.</p>
+<p><a href="https://github.com/dask/dask/pull/12633#issuecomment-7203888467">Read the test conditions and results on GitHub ↗</a></p>
+</section>
