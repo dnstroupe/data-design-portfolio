@@ -6,11 +6,14 @@ from urllib.parse import urlsplit
 ROOT = Path(__file__).resolve().parent
 class Page(HTMLParser):
     def __init__(self, text):
-        super().__init__(); self.ids=set(); self.links=[]; self.h1=0; self.main=0; self.lang=False; self.viewport=False
+        super().__init__(); self.ids=set(); self.duplicate_ids=set(); self.links=[]; self.h1=0; self.main=0; self.lang=False; self.viewport=False
         self.feed(text)
     def handle_starttag(self, tag, attrs):
         a=dict(attrs)
-        if 'id' in a: self.ids.add(a['id'])
+        if 'id' in a:
+            if a['id'] in self.ids:
+                self.duplicate_ids.add(a['id'])
+            self.ids.add(a['id'])
         if tag=='a': self.links.append(a.get('href',''))
         if tag=='h1': self.h1+=1
         if tag=='main': self.main+=1
@@ -19,6 +22,8 @@ class Page(HTMLParser):
 pages={p.name:Page(p.read_text()) for p in ROOT.glob('*.html')}
 errors=[]
 for name,page in pages.items():
+    for duplicate in sorted(page.duplicate_ids):
+        errors.append(f'{name}: duplicate id {duplicate}')
     if not(page.h1==1 and page.main==1 and page.lang and page.viewport): errors.append(f'{name}: page structure')
     for href in page.links:
         u=urlsplit(href)
