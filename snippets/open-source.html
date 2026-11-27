@@ -30,4 +30,7 @@
 <p>I compared a proposed fix with its starting revision across 12 runs. In four string cases, Dask initially reported a different data type from the one it returned. With the change, all four matched the pandas reference. Categorical inputs stayed consistent on both revisions.</p>
 <p><a href="https://github.com/dask/dask/pull/12633#issuecomment-7203888467">Read the test conditions and results on GitHub ↗</a></p>
 <p>I also built a notebook that turned 200,000 points into a density chart and verified all 153,600 pixel counts against an independent NumPy calculation. <a href="https://github.com/dask/dask-examples/pull/251">View the Datashader notebook submission ↗</a></p>
+<h3 id="jupyterlab-code-review">JupyterLab · Reviewing a font-size change</h3>
+<p>I tested what happened when JupyterLab’s font-size code tried to increase the new theme default from 13px to 14px. The parser produced <code>1calc</code>, an invalid CSS value. I shared the input that triggered it and suggested a regression test that checks for <code>14px</code>.</p>
+<p><a href="https://github.com/jupyterlab/jupyterlab/pull/18978#issuecomment-7224992755">Read my JupyterLab code review on GitHub ↗</a></p>
 </section>
